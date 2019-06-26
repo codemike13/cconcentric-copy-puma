@@ -1,0 +1,90 @@
+@media only screen and (min-width: 550px) {
+  .main {
+    grid-template-columns: 768px;
+    grid-template-areas:
+      "head  head  head  head "
+      "img-a img-a x2b   x2b"
+      "img-a img-a img-c img-c"
+      "x2a   x2a   img-c img-c"
+      "img-b img-b img-c img-c"
+      "img-b img-b img-d img-d "
+      "about about about about"
+      "capable capable capable capable"
+      "approach approach approach approach"
+      "clients clients clients clients"
+      "contact contact contact contact";
+    grid-template-rows:
+      295px
+      200px
+      200px
+      200px
+      200px
+      200px
+      500px
+      365px
+      500px
+      1000px
+      600px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  #img-a {
+    grid-area: img-a;
+    /* border: 1px solid purple; */
+    background-image: url(/assets/img-a.jpg);
+    background-size: cover;
+  }
+  #img-x2-a {
+    display: grid;
+    grid-area: x2a;
+    height: 100%;
+    /* border: 1px solid purple; */
+    grid-template-areas: "left right";
+  }
+  #img-x2-a-left {
+    grid-area: left;
+    /* border: 1px solid purple; */
+    background-image: url(/assets/x2a-left-prius.jpg);
+    background-size: cover;
+  }
+  #img-x2-a-right {
+    grid-area: right;
+    /* border: 1px solid purple; */
+    background-image: url(/assets/x2a-right-horse.jpg);
+    background-size: cover;
+  }
+  #img-b {
+  }
+  #img-x2-b {
+    display: grid;
+    grid-area: x2b;
+    /* border: 1px solid purple; */
+    grid-template-areas: "left right";
+  }
+
+  #img-x2-b-left {
+    grid-area: left;
+    /* border: 1px solid purple; */
+    background-image: url(/assets/x2b-left-flowers.jpg);
+    background-size: cover;
+  }
+  #img-x2-b-right {
+    grid-area: right;
+    /* border: 1px solid purple; */
+    background-image: url(/assets/x2b-right-football.jpg);
+    background-size: cover;
+  }
+  #img-c {
+    grid-area: img-c;
+    /* border: 1px solid purple; */
+    background-image: url(/assets/img-c-chou.jpg);
+    background-size: cover;
+  }
+  #about {
+    display: grid;
+    grid-area: about;
+    /* border: 1px solid purple; */
+    justify-content: center;
+    align-items: center;
+  }
+}

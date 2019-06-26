@@ -1,0 +1,225 @@
+.main {
+  display: grid;
+  grid-template-areas:
+    /* "stick" */
+    "head"
+    "img-a"
+    "img-x2-a"
+    "img-b"
+    "img-x2-b"
+    "img-c"
+    "img-d"
+    "about"
+    "capable"
+    "approach"
+    "clients"
+    "contact";
+
+  grid-template-columns: 510px;
+  grid-template-rows: 285px 535px 265px 530px 265px 800px 265px 500px 630px 500px 1340px 700px;
+  border: 1px solid purple;
+}
+
+/* #sticky {
+  grid-area: stick;
+  border: 1px solid purple;
+} */
+#head {
+  grid-area: head;
+  /* border: 1px solid purple; */
+  background-color: black;
+}
+/*  */
+#img-a {
+  grid-area: img-a;
+  /* border: 1px solid purple; */
+  background-image: url(/assets/img-a.jpg);
+  background-size: cover;
+}
+/*  */
+/*  */
+#img-x2-a {
+  display: grid;
+  /* grid-area: img-x2-a; */
+  /* border: 1px solid purple; */
+  grid-template-areas: "left right";
+}
+#img-x2-a-left {
+  grid-area: left;
+  /* border: 1px solid purple; */
+  background-image: url(/assets/x2a-left-prius.jpg);
+  background-size: cover;
+}
+#img-x2-a-right {
+  grid-area: right;
+  /* border: 1px solid purple; */
+  background-image: url(/assets/x2a-right-horse.jpg);
+  background-size: cover;
+}
+/*  */
+/*  */
+#img-b {
+  grid-area: img-b;
+  /* border: 1px solid purple; */
+  background-image: url(/assets/img-b-waiteress.jpg);
+  background-size: cover;
+}
+/*  */
+/*  */
+#img-x2-b {
+  display: grid;
+  grid-area: img-x2-b;
+  /* border: 1px solid purple; */
+  grid-template-areas: "left right";
+}
+
+#img-x2-b-left {
+  grid-area: left;
+  /* border: 1px solid purple; */
+  background-image: url(/assets/x2b-left-flowers.jpg);
+  background-size: cover;
+}
+#img-x2-b-right {
+  grid-area: right;
+  /* border: 1px solid purple; */
+  background-image: url(/assets/x2b-right-football.jpg);
+  background-size: cover;
+}
+/*  */
+/*  */
+#img-c {
+  grid-area: img-c;
+  /* border: 1px solid purple; */
+  background-image: url(/assets/img-c-chou.jpg);
+  background-size: cover;
+}
+#img-d {
+  grid-area: img-d;
+  /* border: 1px solid purple; */
+  background-image: url(/assets/img-d-party.jpg);
+  background-size: cover;
+}
+#about {
+  display: grid;
+  grid-area: about;
+  /* border: 1px solid purple; */
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+/*  */
+/*  */
+#capable {
+  display: grid;
+  grid-area: capable;
+  /* border: 1px solid purple; */
+
+  background-color: rgb(19, 23, 28);
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+/*  */
+#approach {
+  display: grid;
+  grid-area: approach;
+  /* border: 1px solid purple; */
+  justify-content: center;
+  align-items: center;
+}
+
+/*  */
+/*  */
+#clients {
+  display: flex;
+  grid-area: clients;
+  /* border: 1px solid purple; */
+  background-color: rgb(19, 23, 28);
+  color: white;
+  justify-content: center;
+  /* align-items: ; */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#clients-pics {
+  height: 86%;
+  display: grid;
+  background-color: rgb(19, 23, 28);
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#clients-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-column: 1;
+  justify-self: start;
+  width: 106px;
+  height: 100%;
+}
+#clients-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-column: -1;
+  justify-self: end;
+  width: 106px;
+  height: 100%;
+}
+
+#clients-left img,
+#clients-right img {
+  display: flex;
+  height: 90px;
+  width: 106px;
+  object-fit: fill;
+}
+
+/*    */
+/*    */
+#contact {
+  display: grid;
+  grid-area: contact;
+  /* border: 1px solid purple; */
+  background-color: #14171c;
+  justify-content: center;
+}
+#contact .textcenter {
+  margin: none;
+  color: white;
+}
+.textcenter {
+  width: 450px;
+  height: 100%;
+  /* border: 1px solid purple; */
+  justify-content: start;
+}
+
+.textcenter p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.textcenter h1 {
+  font-weight: 200;
+  font-size: 27.5px;
+  line-height: 35px;
+}
+
+.textcenter h5 {
+  padding-top: 10px;
+  font-weight: 200;
+  font-size: 12px;
+  color: rgb(124, 128, 138);
+  letter-spacing: 1px;
+}
+
+.textcenter li {
+  list-style: none;
+  line-height: 30px;
+  color: white;
+}
